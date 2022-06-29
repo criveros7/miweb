@@ -1,0 +1,58 @@
+body{
+    text-align: center;
+}
+#encabezado{
+    width: 1000px;
+    height: 200px;
+    background-color: deepskyblue;
+    display: inline-block;
+    text-align:center;
+    color: #FF0;
+}
+#cuerpo{
+    width: 1000px;
+    height: 200px;
+    display: inline-block;
+    background-color: aquamarine;
+}
+ol, ul {
+    text-align: left;
+    list-style-position: inside;
+}
+/*estilo tablas*/
+table {
+    width: 30%;
+    border-collapse: collapse;
+    padding: 5px;
+}
+table, th, td {
+    border: solid 1px;
+}
+th {
+    background-color: tomato;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+tr:nth-child(even) {
+    background-color:rgb(133, 133, 136);
+}
+tr:nth-child(odd){
+    background-color:rgb(254, 254, 255);
+}
+tr:hover {
+    background-color: bisque;
+    cursor: pointer;
+}
+ .inline {
+    display: inline;
+    width: 50%;
+ }
+
+ span {
+    color: blue;
+ }
+
+ .post {
+    background-color: blanchedalmond;
+ }
