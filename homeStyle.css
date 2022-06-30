@@ -8,7 +8,8 @@ body {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 header {
-   background-color: darkcyan;
+   background-color: white;
+   border-bottom: solid 10px #912b2c;
 }
 .inline {
     display: inline;
@@ -16,23 +17,60 @@ header {
 .align-right {
     float: right;
 }
-.nav {
-    margin: 10px;
-    padding: 10px;
+/*
+***inicio menu***
+*/
+nav {
+    padding:1px;
+    margin: 60px 20px;
+    font-size: 20px;
 }
-.nav a {
-    text-decoration: none;
-    font-size: 15px;
-}
-.nav li {
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /*background-color: #333;*/
+  }
+  
+  li {
+    float: left;
+    border-right:1px solid #bbb;
+  }
+  
+  li:last-child {
+    border-right: none;
+  }
+  
+  li a {
     display: inline-block;
-    width: 20%;
-    padding: 5px 10px;
-    background-color: chartreuse;
-    border: 1px solid #000;
-}
+    color: #912b2c;
+    text-align: center;
+    padding: 1px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover { /*li a:hover:not(.active) actua sobre todo menos en la clase .active*/
+    /*background-color: #111;*/
+    text-shadow: #111 2px;
+  }
+  
+  .active {
+    /*background-color: #04AA6D;*/
+  }
+/*
+***fin menu***
+*/
 section {
+    width: 80%;
+    padding-top: 40px;
+    
+    background-image: url(img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
     background-color: cyan;
+    text-align: center;
 }
 footer {
     background-color: darkgoldenrod;
