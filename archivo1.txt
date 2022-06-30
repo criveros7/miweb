@@ -1,1 +1,43 @@
-hola mundo!!
+Comandos GIT
+
+***configuraciones globales***
+git config --global user.name <<nombre usuario>> // en comillas si tiene espacio
+git config --global user.email <<ejemplo@gmail.com>>
+git config --global core.editor "code --wait" //seleccionar VScode
+git config --global -e  //para probar que el editor abra
+git config --global core.autocrlf true // para configurar los saltos de linea CR o LF
+
+
+***iniciar GIT***
+// para crear el archivo .git en una carpeta debebos estar en el directorio de nuestros archivos locales
+// luego al ejecutar git init, se iniciará y se creará la carpeta oculta .git
+
+git init //iniciar git
+ls // para listar el conteniod de la carpeta en la que estamos
+git status // nos muestra el estado de cada uno de los archivos del directorio
+
+archivos en color rojo, se realizaron cambios y deben ser agregados.
+git add <archivo> // es para agregar el archivo y prepararlo
+git commit -m <<"comentario">> //para confirmar los cambios y listo para ser cargados en el repositorio de Github.
+git push // para cargar y actualizar los archivos en github
+
+
+***Branches/Ramas***
+git checkout -b <<rama nueva>> // crear una rama, -b nos deja en la misma rama
+git Branch // nos muestra la rama en la que estamos.
+git merge <<rama a juntar con la main>> // esto se hace en main/master y lo que hace es unir las ramas  nuesta rama main o master
+
+
+***conexión con GITHUB.COM***
+para conectarnos a nuestro repositorio de github debemos hacer el acceso remoto
+git remote add origin <<direccion de tu repositorio en github.com>> //debe finalizar con .git
+git push -u origin main // main puede ser master segun la configuración
+luego de eso pedira el usuaio y contraseña de github
+username for 'https://github.com': tu usuario 
+password for 'https://github.com': es un token que debes generar con tu perfil de git
+
+
+***otras acciones***
+
+git log // nos muestra las acciones realizadas, los cambios.
+cat <<archivo>>, nos muestra el contenido de cada archivo.
