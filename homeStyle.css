@@ -13,6 +13,7 @@ header {
 }
 .inline {
     display: inline;
+    margin-left: 30px;
 }
 .align-right {
     float: right;
@@ -25,7 +26,7 @@ nav {
     margin: 60px 20px;
     font-size: 20px;
 }
-ul {
+  ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -50,28 +51,103 @@ ul {
     text-decoration: none;
   }
   
-  li a:hover { /*li a:hover:not(.active) actua sobre todo menos en la clase .active*/
+  li a:hover:not(.active) { /*li a:hover:not(.active) actua sobre todo menos en la clase .active*/
     /*background-color: #111;*/
     text-shadow: #111 2px;
+    color: chocolate;
   }
   
   .active {
-    /*background-color: #04AA6D;*/
+    background-color: #7c4412;
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
   }
 /*
 ***fin menu***
 */
 section {
     width: 80%;
-    padding-top: 40px;
-    
+    padding-top: 40px;    
     background-image: url(img/fondo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 800px;
+    height: 450px;
     background-color: cyan;
     text-align: center;
 }
+section .banner {
+    background-color: #dbdbdb5d;
+    border: solid 15px rgba(191, 191, 191, 0.557);
+    color:rgb(88, 33, 33);
+    margin-top: 50px;
+    width: 600px;
+    height: 200px;
+    padding-top: 60px;
+    font-size: 50px;
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    text-shadow: rgb(255, 255, 255) 0.1em 0.1em 0.2em;
+    border-radius: 30% 0% 30% 0%;
+}
+.banner p {
+  margin-right: 30px;
+  margin-left: 30px;
+}
 footer {
-    background-color: darkgoldenrod;
+    background-color: pink;
+    color: #912b2c;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    border-bottom: solid 10px #912b2c;
+}
+
+.pie {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.iconosRRHH {
+  margin-left: 25px;
+  margin-right: 25px;
+  filter: drop-shadow(0 2px 5px rgba(0.5, 0, 0, 0.9));
+}
+
+.contenedor {
+  background-color: pink;
+}
+.enLinea {
+  display: inline;
+  text-align: justify;
+}
+
+.contenedor-flexbox {
+  display: flex; /*Convertimos al menú en flexbox*/
+  justify-content: space-between; /*Con esto le indicamos que margine todos los items que se encuentra adentro hacia la derecha e izquierda*/
+  align-items: center; /*con esto alineamos de manera vertical*/
+  text-align: left;
+}
+.contenedor-flexbox p {
+  padding: 5px;
+}
+
+.informacion {
+  background-color: rgba(221, 221, 221, 0.478);
+  width: 350px;
+  height: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+}
+.informacion a {
+  text-decoration: none;
+  color: #912b2c ;
+}
+.informacion h3 {
+  text-decoration: underline;
+}
+#copyright {
+  text-align: center;
+  padding-top: 15px;
+  padding-right: 30px;
 }
