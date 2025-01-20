@@ -41,3 +41,5 @@ password for 'https://github.com': es un token que debes generar con tu perfil d
 
 git log // nos muestra las acciones realizadas, los cambios.
 cat <<archivo>>, nos muestra el contenido de cada archivo.
+
+test
